@@ -15,9 +15,14 @@ pages:
 
     - type: likert_single_stimulus
       id: ro_tts2
-      content: How well do the following adjectives describe the information you received?
+      content1: How well do the following adjectives describe this VOICE?
+      content2: How well do the following adjectives describe the INFORMATION you received?
       stimuli:
           C1: configs/resources/audio/ro_tts/news_IGSU_Over.wav
+      question1: Trustworthy
+      question2: Accurate
+      question3: Helpful
+      question4: Entertaining
       response:
         - value: 1
           label: 1 - Not at all
@@ -38,28 +43,38 @@ pages:
           label: 4
           img: configs/resources/images/star_off.png
           imgSelected: configs/resources/images/star_on.png
-          imgHigherResponseSelected: configs/resources/images/star_on.png          
-      response:
-        - value: 1
-          label: 1 - Not at all
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 5
+          label: 5
           img: configs/resources/images/star_off.png
           imgSelected: configs/resources/images/star_on.png
           imgHigherResponseSelected: configs/resources/images/star_on.png
-        - value: 2
-          label: 2
+        - value: 6
+          label: 6
           img: configs/resources/images/star_off.png
           imgSelected: configs/resources/images/star_on.png
           imgHigherResponseSelected: configs/resources/images/star_on.png
-        - value: 3
-          label: 3
+        - value: 7
+          label: 7
           img: configs/resources/images/star_off.png
           imgSelected: configs/resources/images/star_on.png
           imgHigherResponseSelected: configs/resources/images/star_on.png
-        - value: 4
-          label: 4
+        - value: 8
+          label: 8
           img: configs/resources/images/star_off.png
           imgSelected: configs/resources/images/star_on.png
-          imgHigherResponseSelected: configs/resources/images/star_on.png 
+          imgHigherResponseSelected: configs/resources/images/star_on.png   
+        - value: 9
+          label: 9
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 10
+          label: 10 - Very well
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png        
+ 
 
 
     - type: finish
