@@ -1,28 +1,33 @@
-# Likert single stimulus page 1 stimuli, 4 responses
+# Likert single stimulus page 1 stimuli, up to 4 responses
+# the four responses can be seperated into two different questions if content2 is filled with a second question
+ 
 
-
-testname: Likert Single Stimulus with four responses
+testname: Radio broadcast listening excercise
 testId: lss_4scale
 bufferSize: 2048
 stopOnErrors: true
 showButtonPreviousPage: true
 remoteService: service/write.php
 
-
-
 pages:
+
+    - type: generic
+      id: ro_tts_1
+      name: Introduction
+      content: Will include a short introduction explaining that we are looking for feedback about using synthetic voices for radio broadcasts. We will highlight the following This is not intended to replace broadcasters but to add to the current resources of radio stations Give example of Romanian 24 hour broadcasting laws. Explain that this is a method to take existing information from internet sources and share it with people who may not otherwise see it.
+
 
 
     - type: likert_single_stimulus
-      id: ro_tts2
-      content1: How well do the following adjectives describe this VOICE?
-      content2: How well do the following adjectives describe the INFORMATION you received?
+      id: ro_tts_2
+      content1: How well do the following adjectives describe this broadcast segment?
+      content2: 
       stimuli:
           C1: configs/resources/audio/ro_tts/news_IGSU_Over.wav
-      question1: Trustworthy
-      question2: Accurate
-      question3: Helpful
-      question4: Entertaining
+      question1: Trustworthy / Credible
+      question2: Appealing
+      question3: Suitable for radio
+      question4: Coherent / Comprehensible
       response:
         - value: 1
           label: 1 - Not at all
@@ -55,27 +60,10 @@ pages:
           imgSelected: configs/resources/images/star_on.png
           imgHigherResponseSelected: configs/resources/images/star_on.png
         - value: 7
-          label: 7
+          label: 7 - Very well
           img: configs/resources/images/star_off.png
           imgSelected: configs/resources/images/star_on.png
           imgHigherResponseSelected: configs/resources/images/star_on.png
-        - value: 8
-          label: 8
-          img: configs/resources/images/star_off.png
-          imgSelected: configs/resources/images/star_on.png
-          imgHigherResponseSelected: configs/resources/images/star_on.png   
-        - value: 9
-          label: 9
-          img: configs/resources/images/star_off.png
-          imgSelected: configs/resources/images/star_on.png
-          imgHigherResponseSelected: configs/resources/images/star_on.png
-        - value: 10
-          label: 10 - Very well
-          img: configs/resources/images/star_off.png
-          imgSelected: configs/resources/images/star_on.png
-          imgHigherResponseSelected: configs/resources/images/star_on.png        
- 
-
 
     - type: finish
       name: Thank you
