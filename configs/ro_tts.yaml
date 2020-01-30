@@ -23,7 +23,7 @@ pages:
       content1: How well do the following adjectives describe this broadcast segment?
       content2: 
       stimuli:
-          C1: configs/resources/audio/ro_tts/news_IGSU_Over.wav
+          C1: configs/resources/audio/ro_tts/minstri_economia.wav
       question1: Trustworthy / Credible
       question2: Appealing
       question3: Suitable for radio
