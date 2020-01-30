@@ -14,12 +14,14 @@ pages:
     - type: generic
       id: ro_tts_1
       name: Introduction
-      content: Will include a short introduction explaining that we are looking for feedback about using synthetic voices for radio broadcasts. We will highlight the following This is not intended to replace broadcasters but to add to the current resources of radio stations Give example of Romanian 24 hour broadcasting laws. Explain that this is a method to take existing information from internet sources and share it with people who may not otherwise see it.
+      content: We will present you with a series of excerpts of radio broadcasts. You may notice that some of the content contains synthetic speech. The purpose of using synthetic speech on the the radio is not to replace actual broadcasters on the radio, but to add to the resources and capabilities of radio stations. As an example, even a small Romanian community radio station is required to broadcast 24 hours of unique content. Using synthetic voices, it is possible to broadcast existing information and text from internet sources and share it with people who may not otherwise be able to access it. We ask you to listen to the following audio clips and consider how you would feel about them if they are being broadcast on a local radio station in your community.
 
 
 
     - type: likert_single_stimulus
       id: ro_tts_2
+      mustRate: true
+      mustPlayback: true
       content1: How well do the following adjectives describe this broadcast segment?
       content2: 
       stimuli:
@@ -70,3 +72,20 @@ pages:
       content: Thank you for attending
       showResults: true
       writeResults: true
+      questionnaire:
+          - type: number
+            label: Age
+            name: age
+            min: 0
+            max: 100
+            default: 30
+          - type: likert
+            name: gender
+            label: Gender
+            response:
+             - value: female
+               label: Female
+             - value: male
+               label: Male
+             - value: other
+               label: Other
