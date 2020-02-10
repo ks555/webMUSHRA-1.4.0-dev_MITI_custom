@@ -11,15 +11,11 @@ remoteService: service/write.php
 
 pages:
 
-  - type: generic
-    id: ro_tts_1
-    name: Introduction
-    content:  În cele ce urmează vă vor fi prezentate o serie de clipuri audio preluate din emisiuni radio. Veți observa că unele dintre acestea conțin voce sintetizată. Scopul utilizării vocii sintetizate nu este de a înlocui prezentatorii radio, ci de a adăuga resurse și funcționalități ale posturilor de emisie. De exemplu, chiar și un post de radio dintr-o comunitate mică este forțat să difuzeze 24 de ore de conținut unic. Folosind voci sintetizate, informațiile existente sau text extras din resurse din internet, pot fi difuzate către persoane ce nu au altfel acces la acestea. Vă rugăm să ascultați următoarele clipuri audio și să luați în considerare modul în care v-ați simți dacă acestea ar fi difuzate de către un post de radio pe care îl ascultați în comunitatea voastră.
+    - type: generic
+      id: ro_tts_1
+      name: Introduction
+      content:  În cele ce urmează vă vor fi prezentate o serie de clipuri audio preluate din emisiuni radio. Veți observa că unele dintre acestea conțin voce sintetizată. Scopul utilizării vocii sintetizate nu este de a înlocui prezentatorii radio, ci de a adăuga resurse și funcționalități ale posturilor de emisie. De exemplu, chiar și un post de radio dintr-o comunitate mică este forțat să difuzeze 24 de ore de conținut unic. Folosind voci sintetizate, informațiile existente sau text extras din resurse din internet, pot fi difuzate către persoane ce nu au altfel acces la acestea. Vă rugăm să ascultați următoarele clipuri audio și să luați în considerare modul în care v-ați simți dacă acestea ar fi difuzate de către un post de radio pe care îl ascultați în comunitatea voastră.
 
-  -
-   - random
-
-   -
     - type: likert_single_stimulus
       id: ro_tts_3
       mustRate: false
@@ -69,7 +65,6 @@ pages:
           imgSelected: configs/resources/images/star_on.png
           imgHigherResponseSelected: configs/resources/images/star_on.png
 
-   -
     - type: likert_single_stimulus
       id: ro_tts_4
       mustRate: false
@@ -119,7 +114,6 @@ pages:
           imgSelected: configs/resources/images/star_on.png
           imgHigherResponseSelected: configs/resources/images/star_on.png
 
-   -
     - type: likert_single_stimulus
       id: ro_tts_6
       mustRate: false
@@ -168,7 +162,7 @@ pages:
           img: configs/resources/images/star_off.png
           imgSelected: configs/resources/images/star_on.png
           imgHigherResponseSelected: configs/resources/images/star_on.png
-   -
+
     - type: likert_single_stimulus
       id: ro_tts_9
       mustRate: false
@@ -217,7 +211,7 @@ pages:
           img: configs/resources/images/star_off.png
           imgSelected: configs/resources/images/star_on.png
           imgHigherResponseSelected: configs/resources/images/star_on.png
-   -
+
     - type: likert_single_stimulus
       id: ro_tts_10
       mustRate: false
@@ -266,7 +260,7 @@ pages:
           img: configs/resources/images/star_off.png
           imgSelected: configs/resources/images/star_on.png
           imgHigherResponseSelected: configs/resources/images/star_on.png
-   -
+
     - type: likert_single_stimulus
       id: ro_tts_11
       mustRate: false
@@ -315,7 +309,7 @@ pages:
           img: configs/resources/images/star_off.png
           imgSelected: configs/resources/images/star_on.png
           imgHigherResponseSelected: configs/resources/images/star_on.png
-   -
+
     - type: likert_single_stimulus
       id: ro_tts_12
       mustRate: false
@@ -364,7 +358,7 @@ pages:
           img: configs/resources/images/star_off.png
           imgSelected: configs/resources/images/star_on.png
           imgHigherResponseSelected: configs/resources/images/star_on.png
-   -
+
     - type: likert_single_stimulus
       id: ro_tts_13
       mustRate: false
@@ -413,7 +407,7 @@ pages:
           img: configs/resources/images/star_off.png
           imgSelected: configs/resources/images/star_on.png
           imgHigherResponseSelected: configs/resources/images/star_on.png
-   -
+
     - type: likert_single_stimulus
       id: ro_tts_14
       mustRate: false
@@ -463,7 +457,6 @@ pages:
           imgSelected: configs/resources/images/star_on.png
           imgHigherResponseSelected: configs/resources/images/star_on.png
 
-   -
     - type: likert_single_stimulus
       id: ro_tts_12
       mustRate: false
@@ -512,7 +505,7 @@ pages:
           img: configs/resources/images/star_off.png
           imgSelected: configs/resources/images/star_on.png
           imgHigherResponseSelected: configs/resources/images/star_on.png
-   -
+
     - type: likert_single_stimulus
       id: ro_tts_13
       mustRate: false
@@ -561,7 +554,7 @@ pages:
           img: configs/resources/images/star_off.png
           imgSelected: configs/resources/images/star_on.png
           imgHigherResponseSelected: configs/resources/images/star_on.png
-   -
+
     - type: likert_single_stimulus
       id: ro_tts_14
       mustRate: false
@@ -611,39 +604,184 @@ pages:
           imgSelected: configs/resources/images/star_on.png
           imgHigherResponseSelected: configs/resources/images/star_on.png
 
+    - type: likert_single_stimulus
+      id: ro_tts_13
+      mustRate: false
+      mustPlayback: false
+      content1: Cât de bine este descris clipul audio de către următoarele adjective?
+      content2: 
+      stimuli:
+          C1: configs/resources/audio/ro_tts/cultura_muntele_LIS.mp3
+      question1: Coerent
+      question2: Adecvat pentru radio
+      question3: De încredere
+      question4: Atractiv
+      response:
+        - value: 1
+          label: 1 - Deloc
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 2
+          label: 2
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 3
+          label: 3
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 4
+          label: 4
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 5
+          label: 5
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 6
+          label: 6
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 7
+          label: 7 - Foarte bine
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
 
-  - type: finish
-    name: Thank you
-    content: Mulțumim pentru participare!
-    showResults: true
-    writeResults: true
-    questionnaire:
-        - type: number
-          label: Vârsta
-          name: Vârsta
-          min: 0
-          max: 100
-          default: 30
-        - type: likert
-          name: Sexul
-          label: Sexul
-          response:
-           - value: Feminin
-             label: Feminin
-           - value: Masculin
-             label: Masculin
-           - value: Altul
-             label: Altul
-        - type: likert
-          name: region
-          label: What region would you say you are from? (select best answer)
-          response: 
-           - value: Dobrogea
-             label: Dobrogea
-           - value: Moldova
-             label: Moldova
-           - value: Transilvania
-             label: Transilvania
-           - value: Țara Românească
-             label: Țara Românească
+    - type: likert_single_stimulus
+      id: ro_tts_14
+      mustRate: false
+      mustPlayback: false
+      content1: Cât de bine este descris clipul audio de către următoarele adjective?
+      content2: 
+      stimuli:
+          C1: configs/resources/audio/ro_tts/cultura_un_fei_CER.mp3
+      question1: Coerent
+      question2: Adecvat pentru radio
+      question3: De încredere
+      question4: Atractiv
+      response:
+        - value: 1
+          label: 1 - Deloc
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 2
+          label: 2
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 3
+          label: 3
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 4
+          label: 4
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 5
+          label: 5
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 6
+          label: 6
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 7
+          label: 7 - Foarte bine
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+
+    - type: likert_single_stimulus
+      id: ro_tts_15
+      mustRate: false
+      mustPlayback: false
+      content1: Cât de bine este descris clipul audio de către următoarele adjective?
+      content2: 
+      stimuli:
+          C1: configs/resources/audio/ro_tts/cultura_casa_BAS.mp3
+      question1: Coerent
+      question2: Adecvat pentru radio
+      question3: De încredere
+      question4: Atractiv
+      response:
+        - value: 1
+          label: 1 - Deloc
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 2
+          label: 2
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 3
+          label: 3
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 4
+          label: 4
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 5
+          label: 5
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 6
+          label: 6
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 7
+          label: 7 - Foarte bine
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+    - type: finish
+      name: Thank you
+      content: Mulțumim pentru participare!
+      showResults: true
+      writeResults: true
+      questionnaire:
+          - type: number
+            label: Vârsta
+            name: Vârsta
+            min: 0
+            max: 100
+            default: 30
+          - type: likert
+            name: Sexul
+            label: Sexul
+            response:
+             - value: Feminin
+               label: Feminin
+             - value: Masculin
+               label: Masculin
+             - value: Altul
+               label: Altul
+          - type: likert
+            name: region
+            label: What region would you say you are from? (select best answer)
+            response: 
+             - value: Dobrogea
+               label: Dobrogea
+             - value: Moldova
+               label: Moldova
+             - value: Transilvania
+               label: Transilvania
+             - value: Țara Românească
+               label: Țara Românească
 
