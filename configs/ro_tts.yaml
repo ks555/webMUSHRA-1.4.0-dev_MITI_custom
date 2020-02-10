@@ -11,25 +11,27 @@ remoteService: service/write.php
 
 pages:
 
-    - type: generic
-      id: ro_tts_1
-      name: Introduction
-      content: We will present you with a series of excerpts of radio broadcasts. You may notice that some of the content contains synthetic speech. The purpose of using synthetic speech on the the radio is not to replace actual broadcasters on the radio, but to add to the resources and capabilities of radio stations. As an example, even a small Romanian community radio station is required to broadcast 24 hours of unique content. Using synthetic voices, it is possible to broadcast existing information and text from internet sources and share it with people who may not otherwise be able to access it. We ask you to listen to the following audio clips and consider how you would feel about them if they are being broadcast on a local radio station in your community.
+  - type: generic
+    id: ro_tts_1
+    name: Introduction
+    content: We will present you with a series of excerpts of radio broadcasts. You may notice that some of the content contains synthetic speech. The purpose of using synthetic speech on the the radio is not to replace actual broadcasters on the radio, but to add to the resources and capabilities of radio stations. As an example, even a small Romanian community radio station is required to broadcast 24 hours of unique content. Using synthetic voices, it is possible to broadcast existing information and text from internet sources and share it with people who may not otherwise be able to access it. We ask you to listen to the following audio clips and consider how you would feel about them if they are being broadcast on a local radio station in your community.
 
+  -
+   - random
 
-
+   -
     - type: likert_single_stimulus
-      id: ro_tts_2
-      mustRate: true
-      mustPlayback: true
+      id: ro_tts_3
+      mustRate: false
+      mustPlayback: false
       content1: How well do the following adjectives describe this broadcast segment?
       content2: 
       stimuli:
-          C1: configs/resources/audio/ro_tts/minstri_economia.wav
-      question1: Trustworthy / Credible
-      question2: Appealing
-      question3: Suitable for radio
-      question4: Coherent / Comprehensible
+          C1: configs/resources/audio/ro_tts/cultura_franturi_LIS.mp3
+      question1: Coherent
+      question2: Suitable for radio
+      question3: Trustworthy
+      question4: Appealing
       response:
         - value: 1
           label: 1 - Not at all
@@ -67,25 +69,581 @@ pages:
           imgSelected: configs/resources/images/star_on.png
           imgHigherResponseSelected: configs/resources/images/star_on.png
 
-    - type: finish
-      name: Thank you
-      content: Thank you for attending
-      showResults: true
-      writeResults: true
-      questionnaire:
-          - type: number
-            label: Age
-            name: age
-            min: 0
-            max: 100
-            default: 30
-          - type: likert
-            name: gender
-            label: Gender
-            response:
-             - value: female
-               label: Female
-             - value: male
-               label: Male
-             - value: other
-               label: Other
+   -
+    - type: likert_single_stimulus
+      id: ro_tts_4
+      mustRate: false
+      mustPlayback: false
+      content1: How well do the following adjectives describe this broadcast segment?
+      content2: 
+      stimuli:
+          C1: configs/resources/audio/ro_tts/cultura_frumsetea_BAS.mp3
+      question1: Coherent
+      question2: Suitable for radio
+      question3: Trustworthy
+      question4: Appealing
+      response:
+        - value: 1
+          label: 1 - Not at all
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 2
+          label: 2
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 3
+          label: 3
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 4
+          label: 4
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 5
+          label: 5
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 6
+          label: 6
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 7
+          label: 7 - Very well
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+
+   -
+    - type: likert_single_stimulus
+      id: ro_tts_6
+      mustRate: false
+      mustPlayback: false
+      content1: How well do the following adjectives describe this broadcast segment?
+      content2: 
+      stimuli:
+          C1: configs/resources/audio/ro_tts/cultura_parfum_CER.mp3
+      question1: Coherent
+      question2: Suitable for radio
+      question3: Trustworthy
+      question4: Appealing
+      response:
+        - value: 1
+          label: 1 - Not at all
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 2
+          label: 2
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 3
+          label: 3
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 4
+          label: 4
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 5
+          label: 5
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 6
+          label: 6
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 7
+          label: 7 - Very well
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+   -
+    - type: likert_single_stimulus
+      id: ro_tts_9
+      mustRate: false
+      mustPlayback: false
+      content1: How well do the following adjectives describe this broadcast segment?
+      content2: 
+      stimuli:
+          C1: configs/resources/audio/ro_tts/news_IGSU_BAS.mp3
+      question1: Coherent
+      question2: Suitable for radio
+      question3: Trustworthy
+      question4: Appealing
+      response:
+        - value: 1
+          label: 1 - Not at all
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 2
+          label: 2
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 3
+          label: 3
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 4
+          label: 4
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 5
+          label: 5
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 6
+          label: 6
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 7
+          label: 7 - Very well
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+   -
+    - type: likert_single_stimulus
+      id: ro_tts_10
+      mustRate: false
+      mustPlayback: false
+      content1: How well do the following adjectives describe this broadcast segment?
+      content2: 
+      stimuli:
+          C1: configs/resources/audio/ro_tts/news_lalomita_incendiu_CER.mp3
+      question1: Coherent
+      question2: Suitable for radio
+      question3: Trustworthy
+      question4: Appealing
+      response:
+        - value: 1
+          label: 1 - Not at all
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 2
+          label: 2
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 3
+          label: 3
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 4
+          label: 4
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 5
+          label: 5
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 6
+          label: 6
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 7
+          label: 7 - Very well
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+   -
+    - type: likert_single_stimulus
+      id: ro_tts_11
+      mustRate: false
+      mustPlayback: false
+      content1: How well do the following adjectives describe this broadcast segment?
+      content2: 
+      stimuli:
+          C1: configs/resources/audio/ro_tts/news_macron_si_BAS.mp3
+      question1: Coherent
+      question2: Suitable for radio
+      question3: Trustworthy
+      question4: Appealing
+      response:
+        - value: 1
+          label: 1 - Not at all
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 2
+          label: 2
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 3
+          label: 3
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 4
+          label: 4
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 5
+          label: 5
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 6
+          label: 6
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 7
+          label: 7 - Very well
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+   -
+    - type: likert_single_stimulus
+      id: ro_tts_12
+      mustRate: false
+      mustPlayback: false
+      content1: How well do the following adjectives describe this broadcast segment?
+      content2: 
+      stimuli:
+          C1: configs/resources/audio/ro_tts/news_piata_LIS.mp3
+      question1: Coherent
+      question2: Suitable for radio
+      question3: Trustworthy
+      question4: Appealing
+      response:
+        - value: 1
+          label: 1 - Not at all
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 2
+          label: 2
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 3
+          label: 3
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 4
+          label: 4
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 5
+          label: 5
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 6
+          label: 6
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 7
+          label: 7 - Very well
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+   -
+    - type: likert_single_stimulus
+      id: ro_tts_13
+      mustRate: false
+      mustPlayback: false
+      content1: How well do the following adjectives describe this broadcast segment?
+      content2: 
+      stimuli:
+          C1: configs/resources/audio/ro_tts/news_un_baiat_LIS.mp3
+      question1: Coherent
+      question2: Suitable for radio
+      question3: Trustworthy
+      question4: Appealing
+      response:
+        - value: 1
+          label: 1 - Not at all
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 2
+          label: 2
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 3
+          label: 3
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 4
+          label: 4
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 5
+          label: 5
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 6
+          label: 6
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 7
+          label: 7 - Very well
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+   -
+    - type: likert_single_stimulus
+      id: ro_tts_14
+      mustRate: false
+      mustPlayback: false
+      content1: How well do the following adjectives describe this broadcast segment?
+      content2: 
+      stimuli:
+          C1: configs/resources/audio/ro_tts/news_violetta_CER.mp3
+      question1: Coherent
+      question2: Suitable for radio
+      question3: Trustworthy
+      question4: Appealing
+      response:
+        - value: 1
+          label: 1 - Not at all
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 2
+          label: 2
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 3
+          label: 3
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 4
+          label: 4
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 5
+          label: 5
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 6
+          label: 6
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 7
+          label: 7 - Very well
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+
+   -
+    - type: likert_single_stimulus
+      id: ro_tts_12
+      mustRate: false
+      mustPlayback: false
+      content1: How well do the following adjectives describe this broadcast segment?
+      content2: 
+      stimuli:
+          C1: configs/resources/audio/ro_tts/weather_BAS.mp3
+      question1: Coherent
+      question2: Suitable for radio
+      question3: Trustworthy
+      question4: Appealing
+      response:
+        - value: 1
+          label: 1 - Not at all
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 2
+          label: 2
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 3
+          label: 3
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 4
+          label: 4
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 5
+          label: 5
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 6
+          label: 6
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 7
+          label: 7 - Very well
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+   -
+    - type: likert_single_stimulus
+      id: ro_tts_13
+      mustRate: false
+      mustPlayback: false
+      content1: How well do the following adjectives describe this broadcast segment?
+      content2: 
+      stimuli:
+          C1: configs/resources/audio/ro_tts/weather_LIS.mp3
+      question1: Coherent
+      question2: Suitable for radio
+      question3: Trustworthy
+      question4: Appealing
+      response:
+        - value: 1
+          label: 1 - Not at all
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 2
+          label: 2
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 3
+          label: 3
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 4
+          label: 4
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 5
+          label: 5
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 6
+          label: 6
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 7
+          label: 7 - Very well
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+   -
+    - type: likert_single_stimulus
+      id: ro_tts_14
+      mustRate: false
+      mustPlayback: false
+      content1: How well do the following adjectives describe this broadcast segment?
+      content2: 
+      stimuli:
+          C1: configs/resources/audio/ro_tts/weather_CER.mp3
+      question1: Coherent
+      question2: Suitable for radio
+      question3: Trustworthy
+      question4: Appealing
+      response:
+        - value: 1
+          label: 1 - Not at all
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 2
+          label: 2
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 3
+          label: 3
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 4
+          label: 4
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 5
+          label: 5
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 6
+          label: 6
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+        - value: 7
+          label: 7 - Very well
+          img: configs/resources/images/star_off.png
+          imgSelected: configs/resources/images/star_on.png
+          imgHigherResponseSelected: configs/resources/images/star_on.png
+
+
+  - type: finish
+    name: Thank you
+    content: Thank you for participating
+    showResults: true
+    writeResults: true
+    questionnaire:
+        - type: number
+          label: Age
+          name: age
+          min: 0
+          max: 100
+          default: 30
+        - type: likert
+          name: gender
+          label: Gender
+          response:
+           - value: female
+             label: Female
+           - value: male
+             label: Male
+           - value: other
+             label: Other
+        - type: likert
+          name: region
+          label: Region
+          response: 
+           - value: Dobrogea
+             label: Dobrogea
+           - value: Moldova
+             label: Moldova
+           - value: Transilvania
+             label: Transilvania
+           - value: Țara Românească
+             label: Țara Românească
+
