@@ -16,6 +16,12 @@ pages:
     name: Introduction
     content:  În cele ce urmează vă vor fi prezentate o serie de clipuri audio preluate din emisiuni radio. Veți observa că unele dintre acestea conțin voce sintetizată. Scopul utilizării vocii sintetizate nu este de a înlocui prezentatorii radio, ci de a adăuga resurse și funcționalități ale posturilor de emisie. De exemplu, chiar și un post de radio dintr-o comunitate mică este forțat să difuzeze 24 de ore de conținut unic. Folosind voci sintetizate, informațiile existente sau text extras din resurse din internet, pot fi difuzate către persoane ce nu au altfel acces la acestea. Vă rugăm să ascultați următoarele clipuri audio și să luați în considerare modul în care v-ați simți dacă acestea ar fi difuzate de către un post de radio pe care îl ascultați în comunitatea voastră.
 
+  - type: volume
+    id: volume
+    name: Bine ați venit!
+    content: Înainte de a începe testul, vă rugăm să setați volumul la un nivel confortabil. Este recomandat să utilizați căști audio.
+    stimulus: configs/resources/audio/ro_tts/medusa.mp3
+    defaultVolume: 0.5
   -
    - random
 
@@ -27,7 +33,7 @@ pages:
       content1: Cât de bine este descris clipul audio de către următoarele adjective?
       content2: 
       stimuli:
-          C1: configs/resources/audio/ro_tts/cultura_franturi_LIS.mp3
+          C1: configs/resources/audio/ro_tts/medusa.mp3
       question1: Coerent
       question2: Adecvat pentru radio
       question3: De încredere
