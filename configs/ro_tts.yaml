@@ -28,8 +28,8 @@ pages:
    -
     - type: likert_single_stimulus
       id: ro_tts_3
-      mustRate: false
-      mustPlayback: false
+      mustRate: true
+      mustPlayback: true
       content1: Cât de bine este descris clipul audio de către următoarele adjective?
       content2: 
       stimuli:
@@ -78,8 +78,8 @@ pages:
    -
     - type: likert_single_stimulus
       id: ro_tts_4
-      mustRate: false
-      mustPlayback: false
+      mustRate: true
+      mustPlayback: true
       content1: Cât de bine este descris clipul audio de către următoarele adjective?
       content2: 
       stimuli:
@@ -128,8 +128,8 @@ pages:
    -
     - type: likert_single_stimulus
       id: ro_tts_6
-      mustRate: false
-      mustPlayback: false
+      mustRate: true
+      mustPlayback: true
       content1: Cât de bine este descris clipul audio de către următoarele adjective?
       content2: 
       stimuli:
@@ -177,8 +177,8 @@ pages:
    -
     - type: likert_single_stimulus
       id: ro_tts_9
-      mustRate: false
-      mustPlayback: false
+      mustRate: true
+      mustPlayback: true
       content1: Cât de bine este descris clipul audio de către următoarele adjective?
       content2: 
       stimuli:
@@ -226,8 +226,8 @@ pages:
    -
     - type: likert_single_stimulus
       id: ro_tts_10
-      mustRate: false
-      mustPlayback: false
+      mustRate: true
+      mustPlayback: true
       content1: Cât de bine este descris clipul audio de către următoarele adjective?
       content2: 
       stimuli:
@@ -275,8 +275,8 @@ pages:
    -
     - type: likert_single_stimulus
       id: ro_tts_11
-      mustRate: false
-      mustPlayback: false
+      mustRate: true
+      mustPlayback: true
       content1: Cât de bine este descris clipul audio de către următoarele adjective?
       content2: 
       stimuli:
@@ -324,8 +324,8 @@ pages:
    -
     - type: likert_single_stimulus
       id: ro_tts_12
-      mustRate: false
-      mustPlayback: false
+      mustRate: true
+      mustPlayback: true
       content1: Cât de bine este descris clipul audio de către următoarele adjective?
       content2: 
       stimuli:
@@ -373,8 +373,8 @@ pages:
    -
     - type: likert_single_stimulus
       id: ro_tts_13
-      mustRate: false
-      mustPlayback: false
+      mustRate: true
+      mustPlayback: true
       content1: Cât de bine este descris clipul audio de către următoarele adjective?
       content2: 
       stimuli:
@@ -422,8 +422,8 @@ pages:
    -
     - type: likert_single_stimulus
       id: ro_tts_14
-      mustRate: false
-      mustPlayback: false
+      mustRate: true
+      mustPlayback: true
       content1: Cât de bine este descris clipul audio de către următoarele adjective?
       content2: 
       stimuli:
@@ -472,8 +472,8 @@ pages:
    -
     - type: likert_single_stimulus
       id: ro_tts_12
-      mustRate: false
-      mustPlayback: false
+      mustRate: true
+      mustPlayback: true
       content1: Cât de bine este descris clipul audio de către următoarele adjective?
       content2: 
       stimuli:
@@ -521,8 +521,8 @@ pages:
    -
     - type: likert_single_stimulus
       id: ro_tts_13
-      mustRate: false
-      mustPlayback: false
+      mustRate: true
+      mustPlayback: true
       content1: Cât de bine este descris clipul audio de către următoarele adjective?
       content2: 
       stimuli:
@@ -570,8 +570,8 @@ pages:
    -
     - type: likert_single_stimulus
       id: ro_tts_14
-      mustRate: false
-      mustPlayback: false
+      mustRate: true
+      mustPlayback: true
       content1: Cât de bine este descris clipul audio de către următoarele adjective?
       content2: 
       stimuli:
@@ -619,8 +619,8 @@ pages:
 
     - type: likert_single_stimulus
       id: ro_tts_13
-      mustRate: false
-      mustPlayback: false
+      mustRate: true
+      mustPlayback: true
       content1: Cât de bine este descris clipul audio de către următoarele adjective?
       content2: 
       stimuli:
@@ -668,8 +668,8 @@ pages:
 
     - type: likert_single_stimulus
       id: ro_tts_14
-      mustRate: false
-      mustPlayback: false
+      mustRate: true
+      mustPlayback: true
       content1: Cât de bine este descris clipul audio de către următoarele adjective?
       content2: 
       stimuli:
@@ -717,8 +717,8 @@ pages:
 
     - type: likert_single_stimulus
       id: ro_tts_15
-      mustRate: false
-      mustPlayback: false
+      mustRate: true
+      mustPlayback: true
       content1: Cât de bine este descris clipul audio de către următoarele adjective?
       content2: 
       stimuli:
