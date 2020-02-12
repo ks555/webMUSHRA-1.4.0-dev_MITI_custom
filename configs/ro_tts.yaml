@@ -33,7 +33,7 @@ pages:
       content1: Cât de bine este descris clipul audio de către următoarele adjective?
       content2: 
       stimuli:
-          C1: configs/resources/audio/ro_tts/medusa.mp3
+          C1: configs/resources/audio/ro_tts/cultura_franturi_LIS.mp3
       question1: Coerent
       question2: Adecvat pentru radio
       question3: De încredere
@@ -766,7 +766,7 @@ pages:
 
   - type: finish
     name: Thank you
-    content: Mulțumim pentru participare!
+    content: Mulțumim pentru participare! Datele de mai jos ne ajută să interpretăm mai bine rezultatele și nu vor fi stocate sau tranferate către terțe părți.
     showResults: true
     writeResults: true
     questionnaire:
@@ -784,11 +784,11 @@ pages:
              label: Feminin
            - value: Masculin
              label: Masculin
-           - value: Altul
-             label: Altul
+           - value: Prefer să nu răspund
+             label: Prefer să nu răspund
         - type: likert
           name: region
-          label: What region would you say you are from? (select best answer)
+          label: Din ce regiune ai spune că ești? (selectați cel mai bun răspuns)
           response: 
            - value: Dobrogea
              label: Dobrogea
